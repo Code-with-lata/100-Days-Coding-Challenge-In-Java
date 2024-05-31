@@ -7,5 +7,6 @@ public class Product {
         int b = sc.nextInt();
         int Product = a*b;
         System.out.println("product of two number is :" +Product);
+    sc.close();
     }
 }
