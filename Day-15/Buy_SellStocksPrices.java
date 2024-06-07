@@ -4,7 +4,7 @@ public class Buy_SellStocksPrices {
         int maxprofit = 0;
 
         for(int i=0;i<prices.length;i++){
-            if(buyPrices < prices[i]){
+            if(buyPrices < prices[i]){//profit
                 int profit = prices[i] - buyPrices;//today's profit
                 maxprofit = Math.max(maxprofit,profit);
             }
