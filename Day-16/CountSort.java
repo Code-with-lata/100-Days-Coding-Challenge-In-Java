@@ -13,7 +13,7 @@ public class CountSort {
             count[element]++;
         }
         int k =0;
-        for(int i=max;i>=0;i--){
+        for(int i=k;i<count.length;i++){//for(int i=max;i>=0;i--)
             int freq = count[i];
             for(int j=1;j<=freq;j++){
                 arr[k] =i;
