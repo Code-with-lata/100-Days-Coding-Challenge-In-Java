@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Collections;
 
 public class InbuiltSort {
     public static void main(String[] args) {
@@ -14,6 +15,13 @@ public class InbuiltSort {
         for(int i=0;i<arr.length;i++){
             System.out.print(arr1[i]+ " ");
         }
+
+        //In Desending Order
+        Integer arr2[] = {5,4,1,3,2};
+        Arrays.sort(arr,0,3,Collections.reverseOrder());
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+ " ");
+        }   
 
 
 
