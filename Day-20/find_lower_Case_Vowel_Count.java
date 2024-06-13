@@ -1,8 +1,8 @@
 //count how many times lowercase vowels occured in a string entered by the user
 
-import java.util.*;
+import java.util.Scanner;
 
-public class String {
+public class find_lower_Case_Vowel_Count {
     public static int findlowerCaseVowelCount(String str){
         int len = str.length();
         int vowelCount = 0;
