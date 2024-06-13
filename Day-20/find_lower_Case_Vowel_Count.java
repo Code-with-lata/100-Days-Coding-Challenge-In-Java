@@ -23,6 +23,6 @@ public class find_lower_Case_Vowel_Count {
         String str = sc.next();
         int vowelCount = findlowerCaseVowelCount(str);
 
-        System.out.println();
+        System.out.println("The vowels of the string is : " +vowelCount);
     }
 }
