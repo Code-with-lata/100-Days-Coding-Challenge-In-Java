@@ -29,6 +29,7 @@ public class CheckAnagram {
     public static void main(String[] args) {
         String s1 = "aabc";
         String s2 = "baca";
+        checkAnagram(s1, s2);
 
     }
     
