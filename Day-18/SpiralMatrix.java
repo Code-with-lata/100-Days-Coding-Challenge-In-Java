@@ -5,26 +5,26 @@ public class SpiralMatrix {
         int endRow = matrix.length-1;
         int endCol = matrix[0].length-1;
 
-        while(startRow <= endRow && startCol<=endCol){
-            //top
+        while(startRow <= endRow && startCol <= endCol){
+            //top & print the start row
             for(int j=startCol;j<=endCol;j++){
                 System.out.println(matrix[startRow][j]+ " ");
             }
 
-            //right
+            //right & print the last column
             for(int i=startRow+1;i<endRow;i++){
                 System.out.println(matrix[i][endCol]+ " ");
             }
 
-            //buttom
-            for(int j=endCol-1;j>=startCol;j--){
+            //buttom & print the end row
+            for(int j=endCol;j>=startCol;j--){
                 if(startRow ==endRow){
                     break;
                 }
                 System.out.println(matrix[endRow][j]+ " ");
             }
 
-            //left
+            //left & print the start column
             for(int i=endRow-1;i>=startRow+1;i--){
                 if(startCol == endCol){
                     break;
