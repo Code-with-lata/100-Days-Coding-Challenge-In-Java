@@ -16,6 +16,7 @@ public class SearchInSortedMatrix {
             }
         }
         System.out.println("key not found");
+        return false;
     }
     public static void main(String[] args) {
         int matrix[][] = {{10,20,30,40},
@@ -24,7 +25,7 @@ public class SearchInSortedMatrix {
                           {32,33,39,50}};
         
         int key = 33;
-        stairCaseSearch(matrix, key)
+        stairCaseSearch(matrix, key);
     }
     
 }
