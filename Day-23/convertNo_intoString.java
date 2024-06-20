@@ -1,6 +1,7 @@
 public class convertNo_intoString {
+    static String array[] ={"zero","one", "two" ,"three", "four", "five", "six", "seven", "eigth", "nine"};
     public static void printDigit(int num){
-       String[] array ={"one", "two" ,"three", "four", "five", "six", "seven", "eigth", "nine"};
+       
        if(num == 0){
            return;
         }
@@ -11,8 +12,8 @@ public class convertNo_intoString {
     }
 
     public static void main(String[] args) {
-        // String[] array ={"one", "two" ,"three", "four", "five", "six", "seven", "eigth", "nine"};
-        int num = 1239;
+        
+        int num = 8239;
         printDigit(num);
     }
 }
