@@ -9,7 +9,7 @@ public class factorialNo {
     }
     public static void main(String[] args) {
         int n = 5;
-        System.out.println("factorial of" + n + "is" + factorial_No(n));
+        System.out.println("factorial of " + n + " is : " + factorial_No(n));
     }
 
     
