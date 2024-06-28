@@ -5,7 +5,7 @@ public class ElementSearctIn_2D_Array {
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){
                 if(matrix[i][j] == key){
-                    System.out.println("found in cel (" + i + ","+"j)");
+                    System.out.println("found in cel (" + i + ","+j+")");
                     return true;
                 }
             }
@@ -27,9 +27,12 @@ public class ElementSearctIn_2D_Array {
         //output
         for(int i=0;i<n;i++){
             for(int j=0;j<m;j++){
-                System.out.println(matrix[i][j]+ " ");
+                System.out.print(matrix[i][j]+ " ");
             }
-        System.out.println();
-    }
+           System.out.println();
+        }
+
+        search(matrix, 5);
     
+    }
 }
