@@ -16,9 +16,9 @@ public class DiagonalSum_in2D_Array {
         for(int i=0;i<matrix.length;i++){
             //pD
             sum += matrix[i][i];
-
             //SD
-            sum +
+            if(i != matrix.length-1-i)
+                sum += matrix[i][matrix.length-1-i];
         }
         return sum;
     }
