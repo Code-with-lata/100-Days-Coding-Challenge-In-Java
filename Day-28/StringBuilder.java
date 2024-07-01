@@ -4,6 +4,7 @@ public class StringBuilder {
         for(char ch ='a';ch<='z';ch++){
             sb.append(ch);
         }
+        //O(n^2)
         System.out.println(sb);
     }
 }
