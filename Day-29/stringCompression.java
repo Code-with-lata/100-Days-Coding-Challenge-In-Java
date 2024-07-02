@@ -1,7 +1,7 @@
 public class stringCompression {
     public static String compress(String str){
         String newStr = "";
-        for(int i=0;i<str.length();i++){
+        for(int i=0;i<str.length();i++){//O(n)
             Integer count = 1;
             while (i<str.length()-1 && str.charAt(i) == str.charAt(i+1)){
                 count++;
