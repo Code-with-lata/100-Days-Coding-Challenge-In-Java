@@ -1,7 +1,8 @@
+import java.lang.StringBuilder;
 public class ConvertLatterToUppercase {
     public static String toUpperCase(String str){
         StringBuilder sb = new StringBuilder();
-
+        
         char ch = Character.toUpperCase(str.charAt(0));
         sb.append(ch);
 
