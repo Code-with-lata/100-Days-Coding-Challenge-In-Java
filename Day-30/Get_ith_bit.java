@@ -7,6 +7,6 @@ public class Get_ith_bit {
         else{return 1;}
     } 
     public static void main(String[] args) {
-        System.out.println(getIthBit(10, 2));
+        System.out.println(getIthBit(10, 3));
     }
 }
