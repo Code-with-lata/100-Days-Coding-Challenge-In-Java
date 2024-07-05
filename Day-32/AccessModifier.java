@@ -3,8 +3,8 @@ public class AccessModifier {
         BankAccount myAccount = new BankAccount();
         myAccount.username = "Lata";
         System.out.println(myAccount.username);
-        myAccount.setPassword("sfgyyybferevb");
-        // System.out.println(myAccount.password);
+        myAccount.setPassword("sfgyyybferevb") ;
+       //  System.out.println(myAccount.setPassword());
     }
 }
 
