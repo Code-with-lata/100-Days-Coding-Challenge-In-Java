@@ -1,4 +1,4 @@
-public class inhetitance {
+public class SingleInhetitance {
     public static void main(String[] args) {
         Fish shark = new Fish();
         shark.eat();
