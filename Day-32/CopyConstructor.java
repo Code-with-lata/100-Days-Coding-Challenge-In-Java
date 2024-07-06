@@ -20,7 +20,7 @@ class Student {
     String name;
     int roll;
     String password;
-    int marks[];
+    int marks[]; 
 
     //copy Constructor
     Student(Student s1){
