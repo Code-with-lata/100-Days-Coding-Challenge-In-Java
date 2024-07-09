@@ -10,3 +10,4 @@ public class PrintPower {
         System.out.println(power(2, 10));
     }
 }
+ 
