@@ -7,7 +7,7 @@ public class OptimizedPrintPower {
         if(n % 2 == 0){
             return halfPower * halfPower;
         }
-        else{
+        else{ 
             return x * halfPower * halfPower;
         }
     }
