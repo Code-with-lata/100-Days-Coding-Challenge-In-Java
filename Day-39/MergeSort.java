@@ -1,4 +1,10 @@
 public class MergeSort {
+    public static void printArr(int arr[]){
+        for(int i=0;i<arr.length;i++){
+            System.out.print(arr[i]+" ");
+        }
+    }
+
     public static void mergeSort(int arr[], int si, int ei){
         //base case
         if(si>=ei){
@@ -14,7 +20,7 @@ public class MergeSort {
         int temp[] = new int [ei-si+1];
         int i =si; //iteration for left part
         int j = mid+1; //iteration for right part
-        int k = ei; //iteration for temp arr
+        int k = 0; //iteration for temp arr
 
         while(i <= mid && j <= ei){
             if(arr[i]<arr[j]){
@@ -39,11 +45,13 @@ public class MergeSort {
 
         //copy temp to my original arr
         for(k=0, i=si; k<temp.length; k++,i++){
-            arr[]
+            arr[i] = temp[k];
         }
 
     }
     public static void main(String[] args) {
-        
+        int arr[] = {6,3,9,5,2,8};
+        mergeSort(arr, 0, arr.length-1);
+        printArr(arr);
     }
 }
