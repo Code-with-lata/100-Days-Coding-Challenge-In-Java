@@ -1,4 +1,5 @@
 import java.util.LinkedList;
+import java.util.*;
 
 public class LinkedList_Add_first {
     public static class Node {
@@ -13,7 +14,8 @@ public class LinkedList_Add_first {
 
     public static Node head;
     public static Node tail;
-
+    
+    // Add Method
     public void addFirst(int data){
         //step1 = creat new node
         Node newNode = new Node(data);
@@ -29,9 +31,43 @@ public class LinkedList_Add_first {
 
     }
 
+    public void addLast(int data){
+        Node newNode =new Node(data);
+
+        if(head == null){
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+
+        tail = newNode;
+    }
+
+    // Print Method
+    public void print() {
+        if(head == null){
+            System.out.println("LL is empty");
+            return;
+        }
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+"->" );
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
+
+    
     public static void main(String[] args) {
-        LinkedList ll = new LinkedList<>();
-        ll.addFirst(1);
+        LinkedList_Add_first ll = new LinkedList_Add_first();
+        ll.print();
         ll.addFirst(2);
+        ll.print();
+        ll.addFirst(1);
+        ll.print();
+        ll.addLast(3);
+        ll.print();
+        ll.addLast(4);
+        ll.print();
     }
 }
