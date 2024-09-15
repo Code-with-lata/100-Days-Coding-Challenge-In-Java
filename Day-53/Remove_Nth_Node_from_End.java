@@ -1,4 +1,4 @@
-public class Reverse_LL {
+public class Remove_Nth_Node_from_End {
     public static class Node {
         int data;
         Node next;
@@ -55,27 +55,42 @@ public class Reverse_LL {
         }
         System.out.println("null");
     }
-
-    // Reverse the Linked List
-     public void reverse(){
-        Node prev = null;
-        Node curr = tail = head;
-        Node next;
-
-        while(curr != null){
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+     
+    // Delete Nth from the End
+    public void deleteNthfromEnd(int n){
+        // calculate size
+        int size =0;
+        Node temp = head;
+        while(temp != null){
+            temp = temp.next;
+            size++;
         }
-        head = prev;
-     }
+
+        if(n == size){
+            head = head.next; // remove first
+            return;
+        }
+
+        //size-n
+        int i = 1;
+        int iToFind = size-n;
+        Node prev = head;
+        while(i < iToFind){
+            prev =prev.next;
+            i++;
+        }
+
+        prev.next = prev.next.next;
+        return;
+
+    }
+     
     
 
     
     
     public static void main(String args[]){
-        Reverse_LL ll = new Reverse_LL();
+        Remove_Nth_Node_from_End ll = new Remove_Nth_Node_from_End();
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(3);
@@ -84,8 +99,7 @@ public class Reverse_LL {
     
         ll.print();
         
-        ll.reverse();
+        ll.deleteNthfromEnd(3);
         ll.print();
     }
-} 
-
+}
