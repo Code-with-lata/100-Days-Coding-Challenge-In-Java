@@ -68,7 +68,7 @@ public class Check_Palandrom_Or_Not {
     }
 
     public boolean checkPalindrome(){
-        if(head == null || head.next != null){
+        if(head == null || head.next == null){
             return true;
         }
 
@@ -77,7 +77,7 @@ public class Check_Palandrom_Or_Not {
 
         // step2 = reverse 2nd half
         Node prev = null;
-        Node curr = head;
+        Node curr = midNode;
         Node next;
         while(curr != null){
             next = curr.next;
@@ -110,6 +110,7 @@ public class Check_Palandrom_Or_Not {
         ll.addFirst(2);
         ll.addFirst(1);
         ll.addLast(2);
+        ll.addLast(1);
         ll.addLast(1);
         
         
